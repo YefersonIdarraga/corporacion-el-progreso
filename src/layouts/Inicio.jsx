@@ -4,6 +4,7 @@ import Menu from '../helpers/Menu'
 import logo from "../assets/images/menu-logo.png"
 import Footer from '../helpers/Footer'
 import Banner from '../helpers/Banner'
+import ScrollTop from '../helpers/ScrollTop'
 
 const Inicio = () => {
   return (
@@ -21,6 +22,7 @@ const Inicio = () => {
         <img src={logo} alt="" />
         <img src={logo} alt="" />
         <img src={logo} alt="" />
+        <ScrollTop />
         <Footer />
     </section>
   )

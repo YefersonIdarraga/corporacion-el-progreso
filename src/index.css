@@ -10,3 +10,21 @@
 .container{
   width: 100%;
 }
+
+.scroll-top{
+  position: fixed;
+  cursor: pointer;
+  padding: 2px 5px 2px 5px;
+  right: 20px;
+  bottom: 20px;
+  border: none;
+  color: #b1b1b1;
+  font-size: 2.5rem;
+  background: #202020;
+  border-radius: 50%;
+  transition: .3s;
+}
+
+.scroll-top:hover{
+  transform: translateY(-20px) scale(1.1);
+}

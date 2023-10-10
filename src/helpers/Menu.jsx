@@ -57,28 +57,28 @@ const Menu = () => {
                 </div>
                 <ul className='drop-menu'>
                     <li>
-                        <NavLink to="/institucional#quienes-somos">Quienes somos</NavLink>
+                        <a href="#quienes-somos">Quienes somos</a>
                     </li>
                     <li>
-                        <NavLink to="/institucional#mision">Misión</NavLink>
+                        <a href="#mision">Misión</a>
                     </li>
                     <li>
-                        <NavLink to="/institucional#objetivo-general">Objetivo general</NavLink>
+                        <a href="#objetivo-general">Objetivo general</a>
                     </li>
                     <li>
-                        <NavLink to="/institucional#objetivos-generales">Objetivos generales</NavLink>
+                        <a href="#objetivos-generales">Objetivos generales</a>
                     </li>
                     <li>
-                        <NavLink to="/institucional#pilares">Pilares-Valores</NavLink>
+                        <a href="#pilares">Pilares-Valores</a>
                     </li>
                     <li>
-                        <NavLink to="/institucional#organigrama">Organigrama</NavLink>
+                        <a href="#organigrama">Organigrama</a>
                     </li>
                     <li>
-                        <NavLink to="/institucional#reseña-historica">Reseña histórica</NavLink>
+                        <a href="#reseña-historica">Reseña histórica</a>
                     </li>
                     <li>
-                        <NavLink to="/institucional#directorio">Directorio</NavLink>
+                        <a href="#directorio">Directorio</a>
                     </li>
                 </ul>
             </li>
@@ -97,40 +97,40 @@ const Menu = () => {
                 </div>
                 <ul className='drop-menu'>
                     <li>
-                        <NavLink to="/dian#presupuesto-general">Presupuesto general</NavLink>
+                        <a href="#presupuesto-general">Presupuesto general</a>
                     </li>
                     <li>
-                        <NavLink to="/dian#informe-gestion">Informe de gestión del año anterior</NavLink>
+                        <a href="#informe-gestion">Informe de gestión del año anterior</a>
                     </li>
                     <li>
-                        <NavLink to="/dian#estatutos-generales">Estatutos generales</NavLink>
+                        <a href="#estatutos-generales">Estatutos generales</a>
                     </li>
                     <li>
-                        <NavLink to="/dian#estados-financieros">Estados financieros</NavLink>
+                        <a href="#estados-financieros">Estados financieros</a>
                     </li>
                     <li>
-                        <NavLink to="/dian#certificado-cumplimiento">Certificado de cumplimiento de requisitos para permanecer en régimen</NavLink>
+                        <a href="#certificado-cumplimiento">Certificado de cumplimiento de requisitos para permanecer en régimen</a>
                     </li>
                     <li>
-                        <NavLink to="/dian#camara-comercio">Certificado Cámara de comercio</NavLink>
+                        <a href="#camara-comercio">Certificado Cámara de comercio</a>
                     </li>
                     <li>
-                        <NavLink to="/dian#rut">RUT actualizado</NavLink>
+                        <a href="#rut">RUT actualizado</a>
                     </li>
                     <li>
-                        <NavLink to="/dian#declaracion-renta">Declaración de renta</NavLink>
+                        <a href="#declaracion-renta">Declaración de renta</a>
                     </li>
                     <li>
-                        <NavLink to="/dian#regimen-tributario">Régimen tributario especial vigente</NavLink>
+                        <a href="#regimen-tributario">Régimen tributario especial vigente</a>
                     </li>
                     <li>
-                        <NavLink to="/dian#antecedentes-judiciales">Certificado de antecedentes judiciales</NavLink>
+                        <a href="#antecedentes-judiciales">Certificado de antecedentes judiciales</a>
                     </li>
                     <li>
-                        <NavLink to="/dian#informacion-archivos">Presentación de información por envío de archivos</NavLink>
+                        <a href="#informacion-archivos">Presentación de información por envío de archivos</a>
                     </li>
                     <li>
-                        <NavLink to="/dian#acta-asamblea">Acta de Asamblea General o máximo órgano de dirección</NavLink>
+                        <a href="#acta-asamblea">Acta de Asamblea General o máximo órgano de dirección</a>
                     </li>
                 </ul>
             </li>
@@ -140,13 +140,13 @@ const Menu = () => {
                 </div>
                 <ul className='drop-menu'>
                     <li>
-                        <NavLink to="/otros#pqrs">Protocolo y mecanismo de PQRS</NavLink>
+                        <a href="#pqrs">Protocolo y mecanismo de PQRS</a>
                     </li>
                     <li>
-                        <NavLink to="/otros#privacidad-data">Política de privacidad y habeas data</NavLink>
+                        <a href="#privacidad-data">Política de privacidad y habeas data</a>
                     </li>
                     <li>
-                        <NavLink to="/otros#control-interno">Control interno</NavLink>
+                        <a href="#control-interno">Control interno</a>
                     </li>
                 </ul>
             </li>

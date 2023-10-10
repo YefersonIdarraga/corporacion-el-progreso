@@ -1,0 +1,27 @@
+.footer{
+    width: 100%;
+    padding: 10px;
+    background: #931f1d;
+    color: white;
+}
+
+.footer-cont{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.footer-cont img{
+    width: 200px;
+}
+
+.copyright{
+    width: 100%;
+    font-size: .8rem;
+    text-align: center;
+}
+
+.contacto{
+    
+}

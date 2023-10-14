@@ -5,7 +5,7 @@ import Banner from '../helpers/Banner'
 
 const Misional = () => {
   return (
-    <section>
+    <section className="container">
         <Menu />
         <Banner />
         <h1>Misional</h1>

@@ -5,7 +5,7 @@ import Footer from '../helpers/Footer'
 
 const Estrategico = () => {
   return (
-    <section>
+    <section className="container">
         <Menu />
         <Banner />
         <h1>Estrategico</h1>

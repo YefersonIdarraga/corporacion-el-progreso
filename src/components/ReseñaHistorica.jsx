@@ -1,9 +1,15 @@
 import React from "react";
+import reseña from "../assets/images/reseña.png"
 
 const ReseñaHistorica = () => {
   return (
-    <section>
-      <h1>RESEÑA HISTORICA</h1>
+    <section className="reseña" id="reseña-historica">
+      <div className="title-reseña">
+        <h1>RESEÑA HISTORICA</h1>
+        <div>
+            <img src={reseña} alt="Icono Reseña" />
+        </div>
+      </div>
       <p>
         Los antecedentes de la Corporación El Progreso se remontan al año 1989
         cuando un grupo de padres de familia con hijos con necesidades

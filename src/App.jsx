@@ -9,6 +9,7 @@ import Estrategico from './layouts/Estrategico'
 import Legal from './layouts/Legal'
 import Dian from './layouts/Dian'
 import Otros from './layouts/Otros'
+import ReseñaHistorica from './components/ReseñaHistorica'
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Inicio />} />
         <Route path='/institucional' element={<Institucional />} />
+        <Route path='/institucional/reseña-historica' element={<ReseñaHistorica />} />
         <Route path='/misional' element={<Misional />} />
         <Route path='/estrategico' element={<Estrategico />} />
         <Route path='/legal' element={<Legal />} />

@@ -5,7 +5,7 @@ import Footer from '../helpers/Footer'
 
 const Legal = () => {
   return (
-    <section>
+    <section className="container">
         <Menu />
         <Banner />
         <h1>Legal</h1>

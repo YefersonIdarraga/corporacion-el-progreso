@@ -1,0 +1,38 @@
+.reseña{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.title-reseña{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    padding: 5px;
+    background: #2c1b4d;
+}
+
+.title-reseña div{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 20px;
+    background: #2c1b4d;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.title-reseña h1{
+    color: white;
+    text-shadow: 3px 3px 3px black;
+}
+
+.title-reseña div img{
+    width: 80%;
+    filter: brightness(0) invert(1);
+}

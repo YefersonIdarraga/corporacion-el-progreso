@@ -1,5 +1,6 @@
 .menu-cont{
     position: fixed;
+    z-index: 100;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -13,6 +14,7 @@
 .menu-cont.scroll-down {
     height: 60px;
     background: #202020;
+    background: linear-gradient(90deg, #202020, #202020, #00000000);
 }
 
 .menu-logo{
@@ -45,57 +47,5 @@
 }
 
 .menu-element{
-    position: relative;
-    display: flex;
-    flex-direction: column;
     list-style: none;
-    font-size: 1rem;
-}
-
-.drop-menu{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    width: auto;
-    margin-top: 25px;
-    margin-left: 40%;
-    background: #202020;
-    padding: 10px;
-    padding-left: 25px;
-    font-size: .8rem;
-    visibility: hidden;
-    opacity: 0;
-    transition: .4s;
-    transform: translateX(-70%);
-}
-
-.menu-element:hover>.drop-menu{
-    visibility: visible;
-    opacity: 1;
-    transform: translateX(0);
-}
-
-.drop-menu li{
-    width: max-content;
-}
-
-.drop-menu a.active{
-    border-bottom: none;
-}
-
-.arrow-element{
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-.arrow{
-    color: #a7a7a7;
-    cursor: pointer;
-    transition: .3s;
-}
-
-.menu-element:hover>.arrow-element i{
-    transform: rotate(180deg);
 }

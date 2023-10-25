@@ -50,7 +50,7 @@ html {
   top: 0;
   height: 100vh;
   width: 200px;
-  background: linear-gradient(180deg, #00000000, #363636, #00000000);
+  background: linear-gradient(180deg, #00000000, #363636, #363636, #00000000);
   transform: translateX(-88%);
   transition: .3s;
 }
@@ -59,19 +59,17 @@ html {
   height: 80vh;
   margin-top: 20vh;
   overflow-y: scroll;
+  background: linear-gradient(180deg, #00000000, #363636, #363636);
 }
 
 .lateralMenu-scroll::-webkit-scrollbar{
   background: none;
-  width: 10px;
+  width: 8px;
 }
 
-.lateralMenu-scroll::-webkit-scrollbar-thumb{
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0), gray, rgba(0, 0, 0, 0));
-}
-
-.lateralMenu-scroll::-webkit-scrollbar-thumb:hover{
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0), #a5a5a5, rgba(0, 0, 0, 0));
+.lateralMenu:hover>.lateralMenu-scroll::-webkit-scrollbar-thumb{
+  background: #515151;
+  border-radius: 20px;
 }
 
 .lateralMenu-active{
@@ -117,3 +115,4 @@ html {
 .lateralMenu-link-active{
   border-bottom: 2px solid white;
 }
+

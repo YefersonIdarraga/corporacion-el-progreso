@@ -5,7 +5,6 @@ import menuLogo from "../assets/images/menu-logo.png";
 
 const Menu = () => {
   const [scrolling, setScrolling] = useState(false);
-  const [active, setActive] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {

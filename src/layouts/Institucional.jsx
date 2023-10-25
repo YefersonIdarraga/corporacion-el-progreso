@@ -5,6 +5,8 @@ import Banner from "../helpers/Banner";
 import Footer from "../helpers/Footer";
 import ReseñaHistorica from "../components/ReseñaHistorica";
 import ScrollTop from "../helpers/ScrollTop";
+import Mision from "../components/Mision";
+import Vision from "../components/Vision";
 
 const Institucional = () => {
   const [lateralMenu, setLateralMenu] = useState(false)
@@ -45,25 +47,30 @@ const Institucional = () => {
             className={`${active === 2 ? "lateralMenu-link-active" : ""}`}>Misión</a>
           </li>
           <li>
-            <a href="#objetivo-general"
+            <a href="#vision"
             onClick={() => setActive(3)}
-            className={`${active === 3 ? "lateralMenu-link-active" : ""}`}>Objetivo general</a>
+            className={`${active === 3 ? "lateralMenu-link-active" : ""}`}>Visión</a>
+          </li>
+          <li>
+            <a href="#objetivo-general"
+            onClick={() => setActive(4)}
+            className={`${active === 4 ? "lateralMenu-link-active" : ""}`}>Objetivo general</a>
           </li>
           <li>
             <a href="#objetivos-generales"
-            onClick={() => setActive(4)}
-            className={`${active === 4 ? "lateralMenu-link-active" : ""}`}>Objetivos generales</a>
+            onClick={() => setActive(5)}
+            className={`${active === 5 ? "lateralMenu-link-active" : ""}`}>Objetivos generales</a>
           </li>
           <li>
             <a href="#pilares"
-            onClick={() => setActive(5)}
-            className={`${active === 5 ? "lateralMenu-link-active" : ""}`}>Pilares-Valores</a>
+            onClick={() => setActive(6)}
+            className={`${active === 6 ? "lateralMenu-link-active" : ""}`}>Pilares-Valores</a>
           </li>
           <li>
             <a
               href="#organigrama"
-              onClick={() => setActive(6)}
-              className={`${active === 6 ? "lateralMenu-link-active" : ""}`}
+              onClick={() => setActive(7)}
+              className={`${active === 7 ? "lateralMenu-link-active" : ""}`}
             >
               Organigrama
             </a>
@@ -71,8 +78,8 @@ const Institucional = () => {
           <li>
             <a
               href="#reseña-historica"
-              onClick={() => setActive(7)}
-              className={`${active === 7 ? "lateralMenu-link-active" : ""}`}
+              onClick={() => setActive(8)}
+              className={`${active === 8 ? "lateralMenu-link-active" : ""}`}
             >
               Reseña histórica
             </a>
@@ -80,9 +87,9 @@ const Institucional = () => {
           <li>
             <a href="#directorio"
             onClick={() => {
-              setActive(8);
+              setActive(9);
             }}
-            className={`${active === 8 ? "lateralMenu-link-active" : ""}`}>Directorio</a>
+            className={`${active === 9 ? "lateralMenu-link-active" : ""}`}>Directorio</a>
           </li>
         </ul>
         <div className="arrow-cont" onClick={handleLateralMenu}>
@@ -90,6 +97,8 @@ const Institucional = () => {
         </div>
       </div>
       <section className="subcontainer">
+        <Mision />
+        <Vision />
         <ReseñaHistorica />
       </section>
       <ScrollTop />

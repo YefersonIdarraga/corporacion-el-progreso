@@ -5,10 +5,20 @@ import logo from "../assets/images/menu-logo.png";
 import Footer from "../helpers/Footer";
 import Banner from "../helpers/Banner";
 import ScrollTop from "../helpers/ScrollTop";
+import Slider from "../helpers/Slider";
+import img1 from "../assets/images/slider/imgSlider1.jpg"
+import img2 from "../assets/images/slider/imgSlider2.webp"
+import img3 from "../assets/images/slider/imgSlider3.webp"
 
 const Inicio = () => {
   const [lateralMenu, setLateralMenu] = useState(false);
   const [active, setActive] = useState(0);
+
+  const images = [
+    img1,
+    img2,
+    img3
+  ]
 
   const handleLateralMenu = () => {
     setLateralMenu(!lateralMenu);
@@ -88,6 +98,7 @@ const Inicio = () => {
         </div>
       </div>
       <div className="subcontainer">
+        <Slider images={images} />
         <h1>Inicio</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse

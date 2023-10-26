@@ -36,3 +36,7 @@
     width: 80%;
     filter: brightness(0) invert(1);
 }
+
+.reseña p{
+    text-align: justify;
+}

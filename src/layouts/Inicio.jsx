@@ -6,9 +6,9 @@ import Footer from "../helpers/Footer";
 import Banner from "../helpers/Banner";
 import ScrollTop from "../helpers/ScrollTop";
 import Slider from "../helpers/Slider";
-import img1 from "../assets/images/slider/imgSlider1.jpg"
-import img2 from "../assets/images/slider/imgSlider2.webp"
-import img3 from "../assets/images/slider/imgSlider3.webp"
+import img1 from "../assets/images/slider/picture1.jpg"
+import img2 from "../assets/images/slider/picture2.jpg"
+import img3 from "../assets/images/slider/picture3.jpg"
 
 const Inicio = () => {
   const [lateralMenu, setLateralMenu] = useState(false);
@@ -99,22 +99,6 @@ const Inicio = () => {
       </div>
       <div className="subcontainer">
         <Slider images={images} />
-        <h1>Inicio</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
-          sapiente, sit laudantium et accusamus, error aspernatur rem est
-          voluptas, quod iure beatae deserunt consequuntur neque earum! Eveniet
-          veritatis iusto asperiores!
-        </p>
-        <img src={logo} alt="" />
-        <img src={logo} alt="" />
-        <img src={logo} alt="" />
-        <img src={logo} alt="" />
-        <img src={logo} alt="" />
-        <img src={logo} alt="" />
-        <img src={logo} alt="" />
-        <img src={logo} alt="" />
-        <img src={logo} alt="" />
       </div>
       <ScrollTop />
       <Footer />

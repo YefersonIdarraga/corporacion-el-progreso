@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 import Menu from "../helpers/Menu";
 import Banner from "../helpers/Banner";
 import Footer from "../helpers/Footer";
+import DianComponent from "../components/DianComponent";
+import { collection, getDocs } from 'firebase/firestore';
+import { db } from '../firebaseConfig';
 
 const Dian = () => {
   const [lateralMenu, setLateralMenu] = useState(false);
@@ -25,6 +28,19 @@ const Dian = () => {
     };
   }, []);
 
+  const [documents, setDocuments] = useState([]);
+
+  useEffect(() => {
+    const fetchDocuments = async () => {
+      const querySnapshot = await getDocs(collection(db, 'dian'));
+      let docs = querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+      docs.sort((a, b) => a.orden - b.orden);
+      setDocuments(docs);
+    };
+
+    fetchDocuments();
+  }, []);
+
   return (
     <section className="container">
       <Menu />
@@ -32,16 +48,18 @@ const Dian = () => {
       <div className={`lateralMenu ${lateralMenu ? "lateralMenu-active" : ""}`}>
         <div className="lateralMenu-scroll">
           <ul className="lateralMenu-dian">
-            <li>
+          {documents.map((doc) => (
+            <li key={doc.id}>
               <a
-                href="#presupuesto-general"
-                onClick={() => setActive(1)}
-                className={`${active === 1 ? "lateralMenu-link-active" : ""}`}
+                href={`/dian#${doc.dianId}`}
+                onClick={() => setActive(doc.orden)}
+                className={`${active === doc.orden ? "lateralMenu-link-active" : ""}`}
               >
-                Presupuesto general
+                {doc.titulo}
               </a>
             </li>
-            <li>
+          ))}
+            {/* <li>
               <a
                 href="#informe-gestion"
                 onClick={() => setActive(2)}
@@ -150,7 +168,7 @@ const Dian = () => {
               >
                 Acta de Asamblea General o máximo órgano de dirección
               </a>
-            </li>
+            </li> */}
           </ul>
         </div>
         <div className="arrow-cont" onClick={handleLateralMenu}>
@@ -161,7 +179,7 @@ const Dian = () => {
         </div>
       </div>
       <div className="subcontainer">
-        <h1>DIAN</h1>
+        <DianComponent />
       </div>
       <Footer />
     </section>

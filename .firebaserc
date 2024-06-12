@@ -1,5 +1,9 @@
 {
   "projects": {
-    "default": "corporacion-el-progreso"
-  }
+    "default": "corporacion-el-progreso",
+    "corporacionelprogreso": "corporacion-el-progreso"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
 }

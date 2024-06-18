@@ -14,7 +14,7 @@ const Footer = () => {
                 </div>
             </div>
         </section>
-        <p className='copyright'>&copy; 2023 Corporación El Progreso. Todos los derechos reservados.</p>
+        <p className='copyright'>&copy; 2024 Corporación El Progreso. Todos los derechos reservados.</p>
     </section>
   )
 }

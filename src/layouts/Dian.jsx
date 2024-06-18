@@ -20,6 +20,10 @@ const Dian = () => {
     }
   };
 
+  const capitalizeFirstLetter = (string) => {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  };
+
   useEffect(() => {
     document.addEventListener("click", handleClickOutside);
 
@@ -55,7 +59,7 @@ const Dian = () => {
                 onClick={() => setActive(doc.orden)}
                 className={`${active === doc.orden ? "lateralMenu-link-active" : ""}`}
               >
-                {doc.titulo}
+                {capitalizeFirstLetter(doc.titulo)}
               </a>
             </li>
           ))}
@@ -173,7 +177,7 @@ const Dian = () => {
         </div>
         <div className="arrow-cont" onClick={handleLateralMenu}>
           <i
-            class={`bi bi-caret-right-fill ${lateralMenu ? "arrow-open" : ""}`}
+            className={`bi bi-caret-right-fill ${lateralMenu ? "arrow-open" : ""}`}
             onClick={handleLateralMenu}
           ></i>
         </div>

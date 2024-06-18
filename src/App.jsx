@@ -10,6 +10,7 @@ import Legal from './layouts/Legal'
 import Dian from './layouts/Dian'
 import Otros from './layouts/Otros'
 import ReseñaHistorica from './components/ReseñaHistorica'
+import LoginPage from './components/Login/LoginPage'
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
         <Route path='/legal' element={<Legal />} />
         <Route path='/dian' element={<Dian />} />
         <Route path='/otros' element={<Otros />} />
+        <Route path="/cepadmin" element={<LoginPage />} />
         <Route path='*' element={<Error404 />} />
       </Routes>
     </Router>

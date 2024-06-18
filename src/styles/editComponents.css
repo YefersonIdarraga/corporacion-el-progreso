@@ -1,0 +1,58 @@
+.orden{
+    position: absolute;
+    left: 5px;
+    color: white;
+}
+
+.edit-container input{
+    width: fit-content;
+    text-align: center;
+    background: none;
+    border: 2px solid rgb(254, 254, 254);
+    border-radius: 5px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 3px black;
+}
+
+.edit-container .orden-inp{
+    width: 7%;
+    position: absolute;
+    left: 5px;
+}
+
+.edit-container textarea{
+    width: 100%;
+    background: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.edit-container button{
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin: 5px;
+    float: right;
+    font-size: 1.3rem;
+    transition: .3s;
+}
+
+.btn-edit{
+    color: rgb(39, 39, 39);
+}
+
+.btn-cancel{
+    color: rgb(168, 1, 1);
+}
+
+.btn-save{
+    color: rgb(0, 0, 55);
+}
+
+.edit-container button:hover{
+    transform: scale(1.1);
+}

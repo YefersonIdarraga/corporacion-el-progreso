@@ -168,3 +168,31 @@ html {
   height: 100%;
   background: rgb(90, 0, 0);
 }
+
+.pdf{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.pdf h1{
+  font-size: 2rem;
+  color: #931f1d;
+  text-shadow: 2px 2px 2px black;
+  font-weight: bold;
+  text-align: center;
+  width: 50%;
+  padding: 5px;
+}
+
+.pdf button{
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1.5rem;
+  color: white;
+  text-shadow: 3px 3px 3px black;
+  cursor: pointer;
+  background: rgb(38, 38, 38);
+}

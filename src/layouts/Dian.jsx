@@ -5,6 +5,7 @@ import Footer from "../helpers/Footer";
 import DianComponent from "../components/DianComponent";
 import { collection, getDocs } from 'firebase/firestore';
 import { db } from '../firebaseConfig';
+import PdfModal from "../helpers/PdfModal";
 
 const Dian = () => {
   const [lateralMenu, setLateralMenu] = useState(false);
@@ -44,6 +45,18 @@ const Dian = () => {
 
     fetchDocuments();
   }, []);
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [pdfUrl, setPdfUrl] = useState('');
+
+  const openModal = (url) => {
+      setPdfUrl(url);
+      setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+      setIsModalOpen(false);
+  };
 
   return (
     <section className="container">
@@ -183,7 +196,15 @@ const Dian = () => {
         </div>
       </div>
       <div className="subcontainer">
-        <DianComponent />
+        {/* <DianComponent /> */}
+        <div className="title-reseña">
+          <h1 style={{ fontSize: '2rem'}}>Documentos</h1>
+        </div>
+        <div className="pdf">
+            <h1>EEFF 2023</h1>
+            <button onClick={() => openModal('/pdf/2EEFF2023.pdf')}>Clic aquí para ver el documento</button>
+            <PdfModal isOpen={isModalOpen} onClose={closeModal} pdfUrl={pdfUrl} />
+        </div>
       </div>
       <Footer />
     </section>
